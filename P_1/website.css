@@ -152,9 +152,23 @@ body {
   padding: 0 18px;
   /* transition: 0.4s ease;*/
 }
+.nav-link[href="#topSection"]:active {
+  background-color: black;
+  filter: invert(1);
+  border-radius: 20%;
+}
 .nav-link.active,
 .nav-link:hover {
   color: #fff;
+}
+.nav-link:visited {
+  color: #fff;
+}
+.nav-link:hover {
+  transform: translateX(-30px);
+  background-color: black;
+  filter: invert(1);
+  border-radius: 20%;
 }
 .top-section {
   height: 100vh;
@@ -207,8 +221,11 @@ body {
   position: relative;
   margin: 0 auto 50px;
   padding: 15px 45px;
-  border: 10px solid;
+  border: 2px solid;
   border-radius: 35px;
+  background-color: #0000002b;
+  backdrop-filter: blur(2px);
+  filter: drop-shadow(2px 4px 6px black);
 }
 .blablabla {
   display: flex;
@@ -988,11 +1005,13 @@ body {
 .social-button.twitter-button {
   background: url("https://cdn4.iconfinder.com/data/icons/liu-square-blac/60/twitter-square-social-media-256.png")
     no-repeat center;
+    
 }
 
 .social-button.facebook-button {
   background: url("https://cdn4.iconfinder.com/data/icons/liu-square-blac/60/facebook-square-social-media-256.png")
     no-repeat center;
+    
 }
 
 .social-button.instagram-button {
@@ -1003,6 +1022,15 @@ body {
 .social-button.behance-button {
   background: url("https://cdn4.iconfinder.com/data/icons/liu-square-blac/60/behance-square-social-media-256.png")
     no-repeat center;
+}
+.facebook-button:hover{
+  transform: translateX(-10px);
+}
+.twitter-button:hover{
+  transform: translateY(-10px);
+}
+.instagram-button:hover{
+  transform: translateX(10px);
 }
 /* here starts the all animations */
 
