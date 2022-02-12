@@ -8,12 +8,6 @@ $(document).ready(function () {
     return false;
   });
 
-  // Back to Top Link
-  $(".top-link").click(function () {
-    $("html,body").animate({ scrollTop: $("#topSection").offset().top }, 2000);
-    return false;
-  });
-
   // Function to change the nav-bar on scroll
   $(window).scroll(function () {
     $(window).scrollTop() >= 110
